@@ -223,7 +223,7 @@ body {
   width: 100%;
   position: absolute;
   z-index: 2;
-  bottom: -15%; }
+  bottom: -10%; }
   @media (min-height: 1000px) {
     .puente {
       bottom: -1%; } }
@@ -232,6 +232,11 @@ body {
       width: 120%;
       bottom: -1%;
       margin-left: -10%; } }
+  @media (max-width: 1400px) {
+    .puente {
+      width: 100%;
+      bottom: -1%;
+      margin-left: -0%; } }
   @media (max-width: 1100px) {
     .puente {
       width: 140%;
@@ -254,12 +259,15 @@ body {
       margin-left: -125%; } }
 
 .logo {
-  margin-top: -7%;
+  margin-top: -8%;
   position: absolute;
   z-index: 4; }
   @media (max-width: 1600px) {
     .logo {
       margin-top: -10%; } }
+  @media (max-width: 1400px) {
+    .logo {
+      margin-top: -8%; } }
   @media (max-width: 1100px) {
     .logo {
       margin-top: -12%; } }
@@ -271,7 +279,7 @@ body {
       margin-top: -6%; } }
 
 .logo-puentes {
-  width: 45%; }
+  width: 55%; }
   @media (min-height: 1000px) {
     .logo-puentes {
       width: 60%; } }
@@ -295,7 +303,7 @@ body {
   width: 100%;
   position: absolute;
   z-index: 5;
-  top: -5%; }
+  top: -8%; }
   @media (min-height: 1000px) {
     .lianas {
       top: 0%; } }
@@ -304,6 +312,11 @@ body {
       width: 130%;
       margin-left: -12%;
       top: -5%; } }
+  @media (max-width: 1400px) {
+    .lianas {
+      width: 100%;
+      margin-left: 0%;
+      top: -10%; } }
   @media (max-width: 900px) {
     .lianas {
       width: 220%;
@@ -533,12 +546,16 @@ body {
   color: white;
   background-color: #005444; }
 
+.hoteles-cuidades {
+  position: relative; }
+
 .slider-hoteles {
   border: 6px solid #005444;
   padding: 2%;
   margin-top: 4%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 50vw; }
 
 .item-slide-hoteles {
   width: 100%;
@@ -587,6 +604,27 @@ body {
 
 .espacio-intangible {
   height: 6vh; }
+
+.nav {
+  position: absolute;
+  z-index: 2;
+  top: 45%;
+  width: 8%;
+  cursor: pointer; }
+
+.nav img {
+  width: 100%; }
+
+.nav-prev {
+  left: 3%; }
+
+.nav-next {
+  right: 3%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .puente-separador {
   position: absolute;

@@ -97,11 +97,16 @@
 	background-color: $verde;
 }
 
+.hoteles-cuidades{
+	position: relative;
+}
+
 .slider-hoteles{
 	border: 6px solid $verde;
 	padding: 2%;
 	margin-top: 4%;
 	box-sizing: border-box;
+	width: 50vw;
 }
 
 .item-slide-hoteles{
@@ -154,6 +159,28 @@
 
 .espacio-intangible{
 	height: 6vh;
+}
+
+.nav{
+	position: absolute;
+	z-index: 2;
+	top: 45%;
+	width: 8%;
+	cursor: pointer;
+}
+
+.nav img{
+	width: 100%;
+}
+
+.nav-prev{
+	left: 3%;
+}
+
+.nav-next{
+	right: 3%;
+	@include transforma(rotate(180deg))
+
 }
 
 .puente-separador{
