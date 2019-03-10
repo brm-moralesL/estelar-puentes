@@ -1,0 +1,39 @@
+@mixin transforma($transforma){
+	-webkit-transform:$transforma;
+	-moz-transform:$transforma;
+	-ms-transform:$transforma;
+	-o-transform:$transforma;
+	transform:$transforma;
+}
+
+@mixin border-radius($radio){
+	-webkit-border-radius:$radio;
+	-moz-border-radius:$radio;
+	-ms-border-radius:$radio;
+	-o-border-radius:$radio;
+	border-radius:$radio;
+}
+
+@mixin flex-direction($flexd){
+	-webkit-flex-direction:$flexd;
+	-moz-flex-direction:$flexd;
+	-ms-flex-direction:$flexd;
+	-o-flex-direction:$flexd;
+	flex-direction:$flexd;
+}
+
+@mixin justify-content($flexj){
+	-webkit-justify-content:$flexj;
+	-moz-justify-content:$flexj;
+	-ms-justify-content:$flexj;
+	-o-justify-content:$flexj;
+	justify-content:$flexj;
+}
+
+@mixin align-items($flexa){
+	-webkit-align-items:$flexa;
+	-moz-align-items:$flexa;
+	-ms-align-items:$flexa;
+	-o-align-items:$flexa;
+	align-items:$flexa;
+}

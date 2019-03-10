@@ -1,0 +1,163 @@
+.separador{
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+	height: 4vh;
+	top: 98vh;
+	background-image: url("/img/separador.png");
+	background-repeat: repeat-x;
+	background-size: contain;
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+.hoteles{
+	width: 100%;
+	background-image: url("/img/hoteles/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing:border-box;
+	background-position: bottom;
+	padding: 2% 0%;
+	position: relative;
+
+}
+
+.proximos-festivos{
+	text-align: center;
+}
+
+.titulos-festivos{
+	color: #58595b;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.fecha-slider{
+	font-weight: 800;
+	font-size: 2em;
+	text-transform: uppercase;
+	margin: 0;
+	color: $verde;
+	margin-top: -6%; 
+}
+
+.description-slider{
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0;
+	color: $verde;
+	margin-top: -1%;
+}
+
+.separador-fechas{
+	width: 100%
+}
+
+.separador-fechas img {
+	width: 50%
+}
+
+.lista-hoteles{
+	width: 100%;
+	text-align: center;
+}
+
+.titulo-principal{
+	padding: 0% 2%;
+	font-weight: 800;
+	color: $verde;
+	font-size: 2.3em;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	border-bottom:5px solid;
+}
+
+.lista-cuidades{
+	width: 60%;
+	margin-bottom: 1%;
+}
+
+.cuidad{
+	width: auto;
+	color: $verde;
+	border: 2px solid $verde;
+	padding: 0.5% 2%;
+	font-size: 0.8em;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-left: 4%;
+	cursor: pointer;
+	transition:all 0.5s ease;
+}
+
+.cuidad:hover{
+	color: white;
+	background-color: $verde;
+}
+
+.slider-hoteles{
+	border: 6px solid $verde;
+	padding: 2%;
+	margin-top: 4%;
+	box-sizing: border-box;
+}
+
+.item-slide-hoteles{
+	width: 100%;
+	position: relative;
+}
+
+.item-slide-hoteles .imagen{
+	width: 100%;
+}
+
+.item-slide-hoteles .imagen img {
+	width: 100%;
+}
+
+.descripcion-hotel{
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	width: 100%;
+	padding: 2% 4%;
+	background-color: rgba($verde, 0.8);
+	box-sizing: border-box;
+}
+
+.descripcion-hotel .nombre-hotel{
+	color: white;
+	font-size: 1em;
+	font-weight: 800;
+	text-transform: uppercase;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.reserva{
+	margin-top: 1%;
+	width: 25%;
+	padding: 0.5%;
+	border:1px solid white;
+	cursor: pointer;
+	color: white;
+	text-align: center;
+}
+
+.reserva:hover{
+	color: $verde;
+	background-color: white;
+	transition:all 0.5s ease;
+}
+
+.espacio-intangible{
+	height: 6vh;
+}
+
+.puente-separador{
+	position: absolute;
+	z-index: 2;
+	bottom: -5%;
+}

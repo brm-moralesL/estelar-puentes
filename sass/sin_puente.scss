@@ -1,0 +1,58 @@
+#sin-puente{
+	background-image: url("../img/sin_servicio/fondo.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.cartel{
+	width: 100%;
+	display: inline-flex;
+	display: ms-flex;
+	display: flex;
+	@include flex-direction(row);
+	@include justify-content(center);
+	position: absolute;
+	z-index: 2;
+}
+
+.cartel .contenedor{
+	width: 45%;
+	@media (max-width: 1100px){
+		width: 80%;
+	}
+}
+
+.img-cartel{
+	width: 100%;
+}
+
+
+.niebla{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: 100% 100%;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	box-sizing: border-box;
+	@media (max-width: 600px){
+		background-size: cover;
+	}
+}
+
+.niebla-uno{
+	background-image: url("../img/sin_servicio/niebla_uno.png");
+	animation: niebla 50s linear infinite;
+}
+.niebla-dos{
+	background-image: url("../img/sin_servicio/niebla_dos.png");
+	animation: niebla 30s linear infinite;
+	z-index: 3;
+}
+
