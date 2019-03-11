@@ -22,6 +22,86 @@
   100% {
     right: 120%; } }
 
+@-webkit-keyframes alader {
+  0% {
+    -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    -moz-transform: rotate3d(0, 1, 0, 80deg);
+    -ms-transform: rotate3d(0, 1, 0, 80deg);
+    -o-transform: rotate3d(0, 1, 0, 80deg);
+    transform: rotate3d(0, 1, 0, 80deg); }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg); }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    -moz-transform: rotate3d(0, 1, 0, 80deg);
+    -ms-transform: rotate3d(0, 1, 0, 80deg);
+    -o-transform: rotate3d(0, 1, 0, 80deg);
+    transform: rotate3d(0, 1, 0, 80deg); } }
+
+@keyframes alader {
+  0% {
+    -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    -moz-transform: rotate3d(0, 1, 0, 80deg);
+    -ms-transform: rotate3d(0, 1, 0, 80deg);
+    -o-transform: rotate3d(0, 1, 0, 80deg);
+    transform: rotate3d(0, 1, 0, 80deg); }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg); }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    -moz-transform: rotate3d(0, 1, 0, 80deg);
+    -ms-transform: rotate3d(0, 1, 0, 80deg);
+    -o-transform: rotate3d(0, 1, 0, 80deg);
+    transform: rotate3d(0, 1, 0, 80deg); } }
+
+@-webkit-keyframes alaizq {
+  0% {
+    -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    -moz-transform: rotate3d(0, 1, 0, 80deg);
+    -ms-transform: rotate3d(0, 1, 0, 80deg);
+    -o-transform: rotate3d(0, 1, 0, 80deg);
+    transform: rotate3d(0, 1, 0, 80deg); }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg); }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    -moz-transform: rotate3d(0, 1, 0, 80deg);
+    -ms-transform: rotate3d(0, 1, 0, 80deg);
+    -o-transform: rotate3d(0, 1, 0, 80deg);
+    transform: rotate3d(0, 1, 0, 80deg); } }
+
+@keyframes alaizq {
+  0% {
+    -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    -moz-transform: rotate3d(0, 1, 0, 80deg);
+    -ms-transform: rotate3d(0, 1, 0, 80deg);
+    -o-transform: rotate3d(0, 1, 0, 80deg);
+    transform: rotate3d(0, 1, 0, 80deg); }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 20deg);
+    -moz-transform: rotate3d(0, 1, 0, 20deg);
+    -ms-transform: rotate3d(0, 1, 0, 20deg);
+    -o-transform: rotate3d(0, 1, 0, 20deg);
+    transform: rotate3d(0, 1, 0, 20deg); }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    -moz-transform: rotate3d(0, 1, 0, 80deg);
+    -ms-transform: rotate3d(0, 1, 0, 80deg);
+    -o-transform: rotate3d(0, 1, 0, 80deg);
+    transform: rotate3d(0, 1, 0, 80deg); } }
+
 body {
   margin: auto;
   padding: 0;
@@ -201,6 +281,47 @@ body {
   overflow: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+.m-naranja {
+  position: absolute;
+  z-index: 8;
+  width: 130px;
+  top: 12%;
+  left: 22%;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg); }
+
+.m-azul {
+  position: absolute;
+  z-index: 8;
+  width: 130px;
+  right: 25%;
+  top: 40%;
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg); }
+
+.ala-derecha {
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  position: absolute;
+  -webkit-animation: alader 1s ease-in-out infinite;
+  animation: alader 1s ease-in-out infinite; }
+
+.ala-izquierda {
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  position: absolute;
+  left: 50%;
+  -webkit-animation: alaizq 1s ease-in-out infinite;
+  animation: alaizq 1s ease-in-out infinite; }
 
 .mantaraya {
   width: 20%;

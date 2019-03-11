@@ -15,3 +15,26 @@
 		right: 120%;
 	}
 }
+
+@keyframes alader{
+	0%{
+		@include transforma(rotate3d(0,1,0,80deg));
+	}
+	50%{
+		@include transforma(rotate3d(0,1,0,20deg));
+	}
+	100%{
+		@include transforma(rotate3d(0,1,0,80deg));
+	}
+}
+@keyframes alaizq{
+	0%{
+		@include transforma(rotate3d(0,1,0,80deg));
+	}
+	50%{
+		@include transforma(rotate3d(0,1,0,20deg));
+	}
+	100%{
+		@include transforma(rotate3d(0,1,0,80deg));
+	}
+}

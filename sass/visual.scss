@@ -11,6 +11,36 @@
 	box-sizing: border-box;
 }
 
+
+.m-naranja{
+	position: absolute;
+	z-index: 8;
+	width: 130px;
+	top: 12%;
+	left: 22%;
+	@include transforma(rotate(35deg));
+}
+
+.m-azul{
+	position: absolute;
+	z-index: 8;
+	width: 130px;
+	right: 25%;
+	top: 40%;
+	@include transforma(rotate(-35deg));
+}
+
+.ala-derecha{
+	transform-origin: right;
+	position: absolute;
+	animation: alader 1s ease-in-out infinite;
+}
+.ala-izquierda{
+	transform-origin: left;
+	position: absolute;
+	left: 50%;
+	animation: alaizq 1s ease-in-out infinite;
+}
 .mantaraya{
 	width: 20%;
 	position: absolute;
