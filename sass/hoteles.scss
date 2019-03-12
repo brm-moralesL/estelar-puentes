@@ -23,168 +23,385 @@
 	position: relative;
 
 }
+/*Inicio slider de proximos festivos*/
+	.proximos-festivos{
+		text-align: center;
+		position: relative;
+	}
+	/*Controles navegador slider*/
+		.nav-slider-fest{
+			position: absolute;
+			top: 50%;
+			z-index: 2;
+			width: 25vw;
+			@media (max-width: 1400px){
+				width: 30vw;
+			}
+			@media(max-width: 1100px){
+				width: 45vw;
+			}
+			@media(max-width: 900px){
+				width: 70vw;
+				top: 70%;
+			}
+			@media(max-width: 600px){
+				width: 85vw;
+				top: 60%;
+			}
+		}
 
-.proximos-festivos{
-	text-align: center;
-}
+		.nav-fest-der{
+			left: 0;
+			position: absolute;
+			cursor: pointer;
+		}
 
-.titulos-festivos{
-	color: #58595b;
-	font-weight: 300;
-	text-transform: uppercase;
-}
+		.nav-fest-izq{
+			right: 0;
+			position: absolute;
+			cursor: pointer;
+			@include transforma(rotate(180deg));
+		}
 
-.fecha-slider{
-	font-weight: 800;
-	font-size: 2em;
-	text-transform: uppercase;
-	margin: 0;
-	color: $verde;
-	margin-top: -6%; 
-}
+		.arrow-fest img{
+			width: 100%;
+			@media(max-width: 1100px){
+				width: 60%;
+			}
+		}
+	/*Controles navegador slider*/
 
-.description-slider{
-	font-size: 1em;
-	font-weight: 300;
-	margin: 0;
-	color: $verde;
-	margin-top: -1%;
-}
+	.titulos-festivos{
+		color: #58595b;
+		font-weight: 300;
+		text-transform: uppercase;
+		@media(max-width: 1100px){
+			font-size: 1.8em;
+		}
+		@media(max-width: 900px){
+			font-size: 3.4em;
+		}
+		@media(max-width: 600px){
+			font-size: 5em;
+		}
+	}
 
-.separador-fechas{
-	width: 100%
-}
+	.slide-fest{
+		margin-top: -2%;
+		position: relative;
+		width: 25vw;
+		box-sizing: border-box;
+		@media (max-width: 1400px){
+			width: 30vw;
+		}
+		@media(max-width: 1100px){
+				width: 45vw;
+		}
+		@media(max-width: 900px){
+				width: 70vw;
+				margin-top: 2%;
+		}
+		@media(max-width: 600px){
+			width: 85vw;
+		}
+	}
 
-.separador-fechas img {
-	width: 50%
-}
+	.item-slide-fest{
+		height: auto;
+	}
 
-.lista-hoteles{
-	width: 100%;
-	text-align: center;
-}
+	.fecha-slider{
+		font-weight: 800;
+		font-size: 2em;
+		text-transform: uppercase;
+		margin: 0;
+		color: $verde;
+		@media(max-width: 1100px){
+			font-size: 2.4em;
+		}
+		@media(max-width: 900px){
+			font-size: 3.2em;
+		}
+		@media(max-width: 600px){
+			text-align: center;
+			font-size: 6em;
+		}
+	}
 
-.titulo-principal{
-	padding: 0% 2%;
-	font-weight: 800;
-	color: $verde;
-	font-size: 2.3em;
-	text-transform: uppercase;
-	letter-spacing: 0.3em;
-	border-bottom:5px solid;
-}
+	.description-slider{
+		font-size: 1em;
+		font-weight: 300;
+		margin: 0;
+		color: $verde;
+		@media(max-width: 1100px){
+			font-size: 1.5em;
+		}
+		@media(max-width: 900px){
+			font-size: 2.5em;
+		}
+		@media(max-width: 600px){
+			font-size: 4em;
+			text-align: center;
+			width: 90%;
+			margin-left: 5%;
+		}
+	}
 
-.lista-cuidades{
-	width: 60%;
-	margin-bottom: 1%;
-}
+	/*Separador maticas*/
+		.separador-fechas{
+			width: 100%;
+		}
 
-.cuidad{
-	width: auto;
-	color: $verde;
-	border: 2px solid $verde;
-	padding: 0.5% 2%;
-	font-size: 0.8em;
-	font-weight: 800;
-	text-transform: uppercase;
-	margin-left: 4%;
-	cursor: pointer;
-	transition:all 0.5s ease;
-}
+		.separador-fechas img {
+			width: 50%;
+			@media(max-width: 600px){
+				width: 90%;
+			}
+		}
+	/*Separador maticas*/
+/*Final slider de proximos festivos*/
 
-.cuidad:hover{
-	color: white;
-	background-color: $verde;
-}
+/*Inicio lista de las cuidades*/
+	.lista-hoteles{
+		width: 100%;
+		text-align: center;
+	}
 
-.hoteles-cuidades{
-	position: relative;
-}
+	.titulo-principal{
+		padding: 0% 2%;
+		font-weight: 800;
+		color: $verde;
+		font-size: 2.3em;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		border-bottom:5px solid;
 
-.slider-hoteles{
-	border: 6px solid $verde;
-	padding: 2%;
-	margin-top: 4%;
-	box-sizing: border-box;
-	width: 50vw;
-}
+		@media (max-width: 600px){
+			font-size: 7em;
+		}
+	}
 
-.item-slide-hoteles{
-	width: 100%;
-	position: relative;
-}
+	/*Inicio Slider Cuidades*/
 
-.item-slide-hoteles .imagen{
-	width: 100%;
-}
+		.nav-slider-cuidades{
+			display: none;
+			width: 100%;
+			position: absolute;
+			z-index: 2;
+			top: 40%;
+			@media(max-width: 600px){
+				display: block;
+			}
+		}
 
-.item-slide-hoteles .imagen img {
-	width: 100%;
-}
+		.nav-cuidades-der{
+			position: absolute;
+			left: 5%;
+		}
 
-.descripcion-hotel{
-	position: absolute;
-	z-index: 2;
-	bottom: 0;
-	width: 100%;
-	padding: 2% 4%;
-	background-color: rgba($verde, 0.8);
-	box-sizing: border-box;
-}
+		.nav-cuidades-izq{
+			position: absolute;
+			right: 5%;
+			@include transforma(rotate(180deg));
+		}
+		.slider-lista-cuidades{
+			width: 60%;
+			padding: 0%;
+			margin: auto;
+			margin-bottom: 1%;
+			list-style: none;
+			display: none;
+			@media(max-width: 600px){
+				display: inline;
+			}
+		}
 
-.descripcion-hotel .nombre-hotel{
-	color: white;
-	font-size: 1em;
-	font-weight: 800;
-	text-transform: uppercase;
-	width: 100%;
-	box-sizing: border-box;
-}
+		.slider-lista-cuidades .cuidad{
+			padding: 0%;
+			margin: 0%;
+			box-sizing: border-box;
+		}
+	/*Inicio Slider Cuidades*/
+	.lista-cuidades{
+		width: 60%;
+		padding: 0%;
+		margin: auto;
+		margin-bottom: 1%;
+		list-style: none;
+		@media(max-width: 1100px){
+			width:80%;
+		}
+		@media(max-width: 600px){
+			display: none;
+		}
+	}
 
-.reserva{
-	margin-top: 1%;
-	width: 25%;
-	padding: 0.5%;
-	border:1px solid white;
-	cursor: pointer;
-	color: white;
-	text-align: center;
-}
+	.cuidad{
+		display: inline-block;
+		width: auto;
+		color: $verde;
+		border: 2px solid $verde;
+		padding: 0.5% 2%;
+		font-size: 0.8em;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-left: 4%;
+		margin-top: 2%;
+		cursor: pointer;
+		transition:all 0.5s ease;
+		@media(max-width: 1100px){
+			font-size: 1.2em;
+		}
+		@media (max-width: 900px){
+			font-size: 2em;
+		}
+		@media (max-width: 600px){
+			font-size: 6.5em;
+		}
+	}
 
-.reserva:hover{
-	color: $verde;
-	background-color: white;
-	transition:all 0.5s ease;
-}
+	.cuidad a {
+		text-decoration: none;
+		color: $verde;
+		transition:all 0.5s ease;
+	}
+
+	.cuidad:hover{
+		color: white;
+		background-color: $verde;
+	}
+
+	.cuidad:hover a{
+		color: white;
+	}
+
+	.hoteles-cuidades{
+		position: relative;
+	}
+/*Final lista de las cuidades*/
+
+/*Slider de los hoteles*/
+	.slider-hoteles{
+		border: 6px solid $verde;
+		padding: 2%;
+		margin-top: 4%;
+		box-sizing: border-box;
+		width: 50vw;
+		@media(max-width: 1100px){
+			width: 60vw;
+		}
+		@media(max-width: 900px){
+			width: 75vw;
+		}
+		@media (max-width: 600px){
+			width: 95vw;
+			margin-top: 12%;
+		}
+	}
+
+	.item-slide-hoteles{
+		width: 100%;
+		position: relative;
+	}
+
+	.item-slide-hoteles .imagen{
+		width: 100%;
+	}
+
+	.item-slide-hoteles .imagen img {
+		width: 100%;
+	}
+
+	.descripcion-hotel{
+		position: absolute;
+		z-index: 2;
+		bottom: 0;
+		width: 100%;
+		padding: 2% 4%;
+		background-color: rgba($verde, 0.8);
+		box-sizing: border-box;
+		@media(max-width: 600px){
+			position: relative;
+
+		}
+	}
+
+	.descripcion-hotel .nombre-hotel{
+		color: white;
+		font-size: 1em;
+		font-weight: 800;
+		text-transform: uppercase;
+		width: 100%;
+		box-sizing: border-box;
+		@media(max-width: 800px) and (orientation: landscape){
+			font-size: 2em;
+		}
+		@media(max-width: 600px){
+			font-size: 4em;
+		}
+	}
+
+	.reserva{
+		margin-top: 1%;
+		width: 25%;
+		padding: 0.5%;
+		border:1px solid white;
+		cursor: pointer;
+		color: white;
+		text-align: center;
+		@media(max-width: 800px) and (orientation: landscape){
+			font-size: 1.8em;
+		}
+		@media(max-width: 600px){
+			font-size: 5em;
+			padding: 1% 2%;
+		}
+	}
+
+	.reserva:hover{
+		color: $verde;
+		background-color: white;
+		transition:all 0.5s ease;
+	}
+
+	/*Navegacion de el slider*/
+		.nav{
+			position: absolute;
+			z-index: 2;
+			top: 45%;
+			width: 8%;
+			cursor: pointer;
+			@media(max-width: 600px){
+				width: 15%;
+				top: 55%;
+			}
+		}
+
+		.nav img{
+			width: 100%;
+		}
+
+		.nav-prev{
+			left: 3%;
+		}
+
+		.nav-next{
+			right: 3%;
+			@include transforma(rotate(180deg))
+		}
+	/*Navegacion de el slider*/
+/*Slider de los hoteles*/
 
 .espacio-intangible{
 	height: 6vh;
-}
-
-.nav{
-	position: absolute;
-	z-index: 2;
-	top: 45%;
-	width: 8%;
-	cursor: pointer;
-}
-
-.nav img{
-	width: 100%;
-}
-
-.nav-prev{
-	left: 3%;
-}
-
-.nav-next{
-	right: 3%;
-	@include transforma(rotate(180deg))
-
 }
 
 .puente-separador{
 	position: absolute;
 	z-index: 2;
 	bottom: -5%;
+}
+
+.puente-separador img {
+	width: 100%;
 }

@@ -3,7 +3,8 @@
 	background-color: #0b1a20;
 	background-image: url("../img/terminos/hojas.jpg"), url("../img/terminos/fondo-puente.jpg");
 	background-position: top center, bottom center;
-	background-repeat: repeat-x; 
+	background-repeat: repeat-x, repeat-x;
+	background-size: contain, contain;
 	padding: 2%;
 	box-sizing:border-box;
 }
@@ -14,14 +15,35 @@
 	font-size: 1.8em;
 	text-transform: uppercase;
 	text-shadow: 0px 8px 12px #000000;
+	@media(max-width: 1400px){
+		margin-top: 8%;
+	}
+	@media(max-width: 600px){
+		font-size: 5em;
+		margin-top: 15%;
+	}
 }
 
 .contenido-terminos{
 	margin-top: 3%;
 	color: white;
-	width: 40%;
+	width: 38%;
 	font-weight: 400;
 	font-size: 0.8em;
+	@media(max-width: 1100px){
+		font-size: 1em;
+		width: 45%;
+	}
+	@media(max-width: 900px){
+		font-size: 1.3em;
+		width: 70%;
+	}
+
+	@media(max-width: 600px){
+		font-size: 3em;
+		width: 85%;
+		margin-top: 2%;
+	}
 }
 
 .contenido-terminos h3{
@@ -32,6 +54,16 @@
 .redes-sociales{
 	margin-top: 0.5%;
 	margin-bottom: 5%;
+	@media(max-width: 1400px){
+		margin-bottom: 8%;
+	}
+}
+
+.img-redes{
+	width: 100%;
+	@media(max-width: 1100px){
+		width: 80%;
+	}
 }
 
 .icono-redes{

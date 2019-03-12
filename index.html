@@ -80,13 +80,31 @@
 		<section class="hoteles flex-column">
 			<div class="proximos-festivos">
 				<h2 class="titulos-festivos">Próximos Festivos</h2>
+				<div class="nav-slider-fest">
+					<div class="nav-fest-der arrow-fest">
+						<img src="img/hoteles/slide-nav-fest.png">
+					</div>
+					<div class="nav-fest-izq arrow-fest">
+						<img src="img/hoteles/slide-nav-fest.png">
+					</div>
+				</div>
 				<div class="slide-fest">
-					<h2 class="fecha-slider">
-						1 de Mayo
-					</h2>
-					<h3 class="description-slider">
-						Día de el trabajo
-					</h3>
+					<div class="item-slide-fest">
+						<h2 class="fecha-slider">
+							1 de Mayo
+						</h2>
+						<h3 class="description-slider">
+							Día de el trabajo
+						</h3>
+					</div>
+					<div class="item-slide-fest">
+						<h2 class="fecha-slider">
+							31 de Septiembre
+						</h2>
+						<h3 class="description-slider">
+							Día internacional de el test de programación
+						</h3>
+					</div>
 				</div>
 			</div>
 			<div class="separador-fechas flex-row">
@@ -97,47 +115,93 @@
 					Hoteles
 				</h2>
 		<!--Lista de Cuidades-->
-				<div class="lista-cuidades flex-row">
-					<div class="cuidad">
-						Bogotá
-					</div>
-					<div class="cuidad">
-						Barranquilla
-					</div>
-					<div class="cuidad">
-						Cali
-					</div>
-					<div class="cuidad">
-						Bucaramanga
-					</div>
-					<div class="cuidad">
-						Cartagena
-					</div>
-					<div class="cuidad">
-						Ibague
-					</div>
-				</div>
-				<div class="lista-cuidades flex-row">
-					<div class="cuidad">
-						Manizales
-					</div>
-					<div class="cuidad">
-						Medellín
-					</div>
-					<div class="cuidad">
-						Santa Marta
-					</div>
-					<div class="cuidad">
-						Paipa
-					</div>
-					<div class="cuidad">
-						Villavicencio
-					</div>
-					<div class="cuidad">
-						Yopal
-					</div>
-				</div>
+				<ul class="lista-cuidades">
+					<li class="cuidad">
+						<a href="#">Bogotá</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Barranquilla</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Cali</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Bucaramanga</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Cartagena</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Ibague</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Manizales</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Medellín</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Santa Marta</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Paipa</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Villavicencio</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Yopal</a>
+					</li>
+				</ul>
 		<!--Final de la Lista de Cuidades-->
+		<!--Slider Lista de Cuidades-->
+				<div class="nav-slider-cuidades">
+					<div class="nav-cuidades-der arrow-fest">
+						<img src="img/hoteles/slide-nav-fest.png">
+					</div>
+					<div class="nav-cuidades-izq arrow-fest">
+						<img src="img/hoteles/slide-nav-fest.png">
+					</div>
+				</div>
+				<ul class="slider-lista-cuidades">
+					<li class="cuidad">
+						<a href="#">Bogotá</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Barranquilla</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Cali</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Bucaramanga</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Cartagena</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Ibague</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Manizales</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Medellín</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Santa Marta</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Paipa</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Villavicencio</a>
+					</li>
+					<li class="cuidad">
+						<a href="#">Yopal</a>
+					</li>
+				</ul>
+		<!--Slider Final de la Lista de Cuidades-->
 			</div>
 		<!--slide de hoteles-->
 			<div class="hoteles-cuidades">
@@ -211,7 +275,7 @@
 			<div class="redes-sociales flex-row">
 				<div class="icono-redes">
 					<a href="#" title="Facebook Hoteles Estelar">
-						<img src="img/terminos/facebook.png" facebook="Facebook Hoteles Estelar">
+						<img class="img-redes" src="img/terminos/facebook.png" facebook="Facebook Hoteles Estelar">
 					</a>
 				</div>
 				<div class="separador-redes">
@@ -219,7 +283,7 @@
 				</div>
 				<div class="icono-redes">
 					<a href="#" title="Twitter Hoteles Estelar">
-						<img src="img/terminos/twitter.png" facebook="Twitter Hoteles Estelar">
+						<img class="img-redes" src="img/terminos/twitter.png" facebook="Twitter Hoteles Estelar">
 					</a>
 				</div>
 				<div class="separador-redes">
@@ -227,7 +291,7 @@
 				</div>
 				<div class="icono-redes">
 					<a href="#" title="Instagram Hoteles Estelar">
-						<img src="img/terminos/instagram.png" facebook="Instagram Hoteles Estelar">
+						<img class="img-redes" src="img/terminos/instagram.png" facebook="Instagram Hoteles Estelar">
 					</a>
 				</div>
 				<div class="separador-redes">
@@ -235,7 +299,7 @@
 				</div>
 				<div class="icono-redes">
 					<a href="#" title="Youtube Hoteles Estelar">
-						<img src="img/terminos/youtube.png" facebook="Youtube Hoteles Estelar">
+						<img class="img-redes" src="img/terminos/youtube.png" facebook="Youtube Hoteles Estelar">
 					</a>
 				</div>
 			</div>

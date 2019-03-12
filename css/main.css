@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Muli:400,800");
 @-webkit-keyframes niebla {
   0% {
@@ -282,6 +283,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* Inicio css Mariposas*/
 .m-naranja {
   position: absolute;
   z-index: 8;
@@ -301,6 +303,40 @@ body {
     .m-naranja {
       left: 26%;
       top: 14%; } }
+  @media (max-width: 1400px) {
+    .m-naranja {
+      -webkit-transform: rotate(35deg) scale(0.8);
+      -moz-transform: rotate(35deg) scale(0.8);
+      -ms-transform: rotate(35deg) scale(0.8);
+      -o-transform: rotate(35deg) scale(0.8);
+      transform: rotate(35deg) scale(0.8);
+      left: 22%; } }
+  @media (max-width: 1100px) {
+    .m-naranja {
+      left: 14%;
+      top: 14%; } }
+  @media (max-width: 900px) {
+    .m-naranja {
+      left: 5%;
+      top: 25%; } }
+  @media (max-width: 800px) and (orientation: landscape) {
+    .m-naranja {
+      -webkit-transform: rotate(35deg) scale(0.5);
+      -moz-transform: rotate(35deg) scale(0.5);
+      -ms-transform: rotate(35deg) scale(0.5);
+      -o-transform: rotate(35deg) scale(0.5);
+      transform: rotate(35deg) scale(0.5);
+      left: 18%;
+      top: 45%; } }
+  @media (max-width: 600px) {
+    .m-naranja {
+      -webkit-transform: rotate(35deg) scale(0.5);
+      -moz-transform: rotate(35deg) scale(0.5);
+      -ms-transform: rotate(35deg) scale(0.5);
+      -o-transform: rotate(35deg) scale(0.5);
+      transform: rotate(35deg) scale(0.5);
+      left: -8%;
+      top: 28%; } }
 
 .m-azul {
   position: absolute;
@@ -321,6 +357,45 @@ body {
     .m-azul {
       right: 26%;
       top: 40%; } }
+  @media (max-width: 1400px) {
+    .m-azul {
+      -webkit-transform: rotate(-35deg) scale(0.8);
+      -moz-transform: rotate(-35deg) scale(0.8);
+      -ms-transform: rotate(-35deg) scale(0.8);
+      -o-transform: rotate(-35deg) scale(0.8);
+      transform: rotate(-35deg) scale(0.8);
+      right: 24%;
+      top: 43%; } }
+  @media (max-width: 1300px) {
+    .m-azul {
+      right: 20%;
+      top: 45%; } }
+  @media (max-width: 1100px) {
+    .m-azul {
+      right: 15%;
+      top: 43%; } }
+  @media (max-width: 900px) {
+    .m-azul {
+      right: 5%;
+      top: 44%; } }
+  @media (max-width: 800px) and (orientation: landscape) {
+    .m-azul {
+      -webkit-transform: rotate(-35deg) scale(0.5);
+      -moz-transform: rotate(-35deg) scale(0.5);
+      -ms-transform: rotate(-35deg) scale(0.5);
+      -o-transform: rotate(-35deg) scale(0.5);
+      transform: rotate(-35deg) scale(0.5);
+      right: 18%;
+      top: 44%; } }
+  @media (max-width: 600px) {
+    .m-azul {
+      -webkit-transform: rotate(-35deg) scale(0.5);
+      -moz-transform: rotate(-35deg) scale(0.5);
+      -ms-transform: rotate(-35deg) scale(0.5);
+      -o-transform: rotate(-35deg) scale(0.5);
+      transform: rotate(-35deg) scale(0.5);
+      right: -8%;
+      top: 45%; } }
 
 .ala-derecha {
   -webkit-transform-origin: right;
@@ -339,6 +414,8 @@ body {
   -webkit-animation: alaizq 1.2s ease-in-out infinite;
   animation: alaizq 1.2s ease-in-out infinite; }
 
+/* Final css Mariposas*/
+/* Inicio css Mantaraya*/
 .mantaraya {
   width: 20%;
   position: absolute;
@@ -356,6 +433,8 @@ body {
     .mantaraya {
       width: 20%; } }
 
+/* Final css Mantaraya*/
+/*Inicio foto de el puente*/
 .puente {
   width: 100%;
   position: absolute;
@@ -398,6 +477,8 @@ body {
       bottom: -4%;
       margin-left: -125%; } }
 
+/*Inicio foto de el puente*/
+/* Inicio de logo de estelar puentes, posicion*/
 .logo {
   margin-top: -8%;
   position: absolute;
@@ -419,11 +500,13 @@ body {
       margin-top: -12%; } }
   @media (max-width: 900px) {
     .logo {
-      margin-top: -18%; } }
+      margin-top: -15%; } }
   @media (max-width: 800px) and (orientation: landscape) {
     .logo {
       margin-top: -6%; } }
 
+/* Final de logo de estelar puentes, posicion*/
+/* Inicio de logo de estelar puentes, tamaño de la imagen*/
 .logo-puentes {
   width: 60%; }
   @media (min-height: 1050px) {
@@ -435,9 +518,12 @@ body {
   @media (max-width: 1600px) {
     .logo-puentes {
       width: 60%; } }
-  @media (max-width: 1100px) {
+  @media (max-width: 1300px) {
     .logo-puentes {
       width: 70%; } }
+  @media (max-width: 1100px) {
+    .logo-puentes {
+      width: 80%; } }
   @media (max-width: 900px) {
     .logo-puentes {
       width: 98%; } }
@@ -448,6 +534,8 @@ body {
     .logo-puentes {
       width: 110%; } }
 
+/* Final de logo de estelar puentes, tamaño de la imagen*/
+/* Inicio de las lianas*/
 .lianas {
   width: 100%;
   position: absolute;
@@ -469,6 +557,9 @@ body {
       width: 100%;
       margin-left: 0%;
       top: -10%; } }
+  @media (max-width: 1300px) {
+    .lianas {
+      top: -6%; } }
   @media (max-width: 900px) {
     .lianas {
       width: 220%;
@@ -480,6 +571,8 @@ body {
       margin-left: 0%;
       top: 0%; } }
 
+/* Final de las lianas*/
+/*Inicio de la pocisión de la fecha de el día festivo*/
 .fecha {
   z-index: 4;
   color: white;
@@ -498,23 +591,25 @@ body {
       margin-top: 8%; } }
   @media (max-width: 1100px) {
     .fecha {
-      margin-top: 6%; } }
+      margin-top: 12%; } }
   @media (max-width: 900px) {
     .fecha {
-      margin-top: 12%; } }
+      margin-top: 16%; } }
   @media (max-width: 800px) and (orientation: landscape) {
     .fecha {
       margin-top: 8%; } }
   @media (max-width: 600px) {
     .fecha {
-      margin-top: 15%; } }
+      margin-top: 20%; } }
 
+/*Final de la pocisión de la fecha de el día festivo*/
 .marco {
   position: absolute;
   z-index: 3;
   width: 100%;
   height: 100%; }
 
+/*Inicio de la fecha en la que cae el puente*/
 .puente-fecha {
   font-size: 2.5em;
   font-weight: 800;
@@ -528,10 +623,10 @@ body {
       font-size: 3em; } }
   @media (max-width: 1100px) {
     .puente-fecha {
-      font-size: 3.8em; } }
+      font-size: 4.2em; } }
   @media (max-width: 900px) {
     .puente-fecha {
-      font-size: 6.5em; } }
+      font-size: 7.5em; } }
   @media (max-width: 800px) and (orientation: landscape) {
     .puente-fecha {
       font-size: 3.5em; } }
@@ -539,6 +634,8 @@ body {
     .puente-fecha {
       font-size: 8.5em; } }
 
+/*Final de la fecha en la que cae el puente*/
+/*Inicio de la descripción de el inicio de el puente*/
 .puente-nombre {
   font-size: 1.6em;
   font-weight: 400;
@@ -552,17 +649,18 @@ body {
       font-size: 2em; } }
   @media (max-width: 1100px) {
     .puente-nombre {
-      font-size: 2.6em; } }
+      font-size: 2.8em; } }
   @media (max-width: 900px) {
     .puente-nombre {
       font-size: 4.5em; } }
   @media (max-width: 800px) and (orientation: landscape) {
     .puente-nombre {
       font-size: 2.4em; } }
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     .puente-nombre {
       font-size: 6em; } }
 
+/*Inicio de la descripción de el inicio de el puente*/
 .scroll {
   position: absolute; }
 
@@ -637,35 +735,139 @@ body {
   padding: 2% 0%;
   position: relative; }
 
+/*Inicio slider de proximos festivos*/
 .proximos-festivos {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
+/*Controles navegador slider*/
+.nav-slider-fest {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 25vw; }
+  @media (max-width: 1400px) {
+    .nav-slider-fest {
+      width: 30vw; } }
+  @media (max-width: 1100px) {
+    .nav-slider-fest {
+      width: 45vw; } }
+  @media (max-width: 900px) {
+    .nav-slider-fest {
+      width: 70vw;
+      top: 70%; } }
+  @media (max-width: 600px) {
+    .nav-slider-fest {
+      width: 85vw;
+      top: 60%; } }
+
+.nav-fest-der {
+  left: 0;
+  position: absolute;
+  cursor: pointer; }
+
+.nav-fest-izq {
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.arrow-fest img {
+  width: 100%; }
+  @media (max-width: 1100px) {
+    .arrow-fest img {
+      width: 60%; } }
+
+/*Controles navegador slider*/
 .titulos-festivos {
   color: #58595b;
   font-weight: 300;
   text-transform: uppercase; }
+  @media (max-width: 1100px) {
+    .titulos-festivos {
+      font-size: 1.8em; } }
+  @media (max-width: 900px) {
+    .titulos-festivos {
+      font-size: 3.4em; } }
+  @media (max-width: 600px) {
+    .titulos-festivos {
+      font-size: 5em; } }
+
+.slide-fest {
+  margin-top: -2%;
+  position: relative;
+  width: 25vw;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (max-width: 1400px) {
+    .slide-fest {
+      width: 30vw; } }
+  @media (max-width: 1100px) {
+    .slide-fest {
+      width: 45vw; } }
+  @media (max-width: 900px) {
+    .slide-fest {
+      width: 70vw;
+      margin-top: 2%; } }
+  @media (max-width: 600px) {
+    .slide-fest {
+      width: 85vw; } }
+
+.item-slide-fest {
+  height: auto; }
 
 .fecha-slider {
   font-weight: 800;
   font-size: 2em;
   text-transform: uppercase;
   margin: 0;
-  color: #005444;
-  margin-top: -6%; }
+  color: #005444; }
+  @media (max-width: 1100px) {
+    .fecha-slider {
+      font-size: 2.4em; } }
+  @media (max-width: 900px) {
+    .fecha-slider {
+      font-size: 3.2em; } }
+  @media (max-width: 600px) {
+    .fecha-slider {
+      text-align: center;
+      font-size: 6em; } }
 
 .description-slider {
   font-size: 1em;
   font-weight: 300;
   margin: 0;
-  color: #005444;
-  margin-top: -1%; }
+  color: #005444; }
+  @media (max-width: 1100px) {
+    .description-slider {
+      font-size: 1.5em; } }
+  @media (max-width: 900px) {
+    .description-slider {
+      font-size: 2.5em; } }
+  @media (max-width: 600px) {
+    .description-slider {
+      font-size: 4em;
+      text-align: center;
+      width: 90%;
+      margin-left: 5%; } }
 
+/*Separador maticas*/
 .separador-fechas {
   width: 100%; }
 
 .separador-fechas img {
   width: 50%; }
+  @media (max-width: 600px) {
+    .separador-fechas img {
+      width: 90%; } }
 
+/*Separador maticas*/
+/*Final slider de proximos festivos*/
+/*Inicio lista de las cuidades*/
 .lista-hoteles {
   width: 100%;
   text-align: center; }
@@ -678,12 +880,67 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   border-bottom: 5px solid; }
+  @media (max-width: 600px) {
+    .titulo-principal {
+      font-size: 7em; } }
 
+/*Inicio Slider Cuidades*/
+.nav-slider-cuidades {
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 40%; }
+  @media (max-width: 600px) {
+    .nav-slider-cuidades {
+      display: block; } }
+
+.nav-cuidades-der {
+  position: absolute;
+  left: 5%; }
+
+.nav-cuidades-izq {
+  position: absolute;
+  right: 5%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.slider-lista-cuidades {
+  width: 60%;
+  padding: 0%;
+  margin: auto;
+  margin-bottom: 1%;
+  list-style: none;
+  display: none; }
+  @media (max-width: 600px) {
+    .slider-lista-cuidades {
+      display: inline; } }
+
+.slider-lista-cuidades .cuidad {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*Inicio Slider Cuidades*/
 .lista-cuidades {
   width: 60%;
-  margin-bottom: 1%; }
+  padding: 0%;
+  margin: auto;
+  margin-bottom: 1%;
+  list-style: none; }
+  @media (max-width: 1100px) {
+    .lista-cuidades {
+      width: 80%; } }
+  @media (max-width: 600px) {
+    .lista-cuidades {
+      display: none; } }
 
 .cuidad {
+  display: inline-block;
   width: auto;
   color: #005444;
   border: 2px solid #005444;
@@ -692,7 +949,24 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   margin-left: 4%;
+  margin-top: 2%;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  @media (max-width: 1100px) {
+    .cuidad {
+      font-size: 1.2em; } }
+  @media (max-width: 900px) {
+    .cuidad {
+      font-size: 2em; } }
+  @media (max-width: 600px) {
+    .cuidad {
+      font-size: 6.5em; } }
+
+.cuidad a {
+  text-decoration: none;
+  color: #005444;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
@@ -701,9 +975,14 @@ body {
   color: white;
   background-color: #005444; }
 
+.cuidad:hover a {
+  color: white; }
+
 .hoteles-cuidades {
   position: relative; }
 
+/*Final lista de las cuidades*/
+/*Slider de los hoteles*/
 .slider-hoteles {
   border: 6px solid #005444;
   padding: 2%;
@@ -711,6 +990,16 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 50vw; }
+  @media (max-width: 1100px) {
+    .slider-hoteles {
+      width: 60vw; } }
+  @media (max-width: 900px) {
+    .slider-hoteles {
+      width: 75vw; } }
+  @media (max-width: 600px) {
+    .slider-hoteles {
+      width: 95vw;
+      margin-top: 12%; } }
 
 .item-slide-hoteles {
   width: 100%;
@@ -731,6 +1020,9 @@ body {
   background-color: rgba(0, 84, 68, 0.8);
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  @media (max-width: 600px) {
+    .descripcion-hotel {
+      position: relative; } }
 
 .descripcion-hotel .nombre-hotel {
   color: white;
@@ -740,6 +1032,12 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  @media (max-width: 800px) and (orientation: landscape) {
+    .descripcion-hotel .nombre-hotel {
+      font-size: 2em; } }
+  @media (max-width: 600px) {
+    .descripcion-hotel .nombre-hotel {
+      font-size: 4em; } }
 
 .reserva {
   margin-top: 1%;
@@ -749,6 +1047,13 @@ body {
   cursor: pointer;
   color: white;
   text-align: center; }
+  @media (max-width: 800px) and (orientation: landscape) {
+    .reserva {
+      font-size: 1.8em; } }
+  @media (max-width: 600px) {
+    .reserva {
+      font-size: 5em;
+      padding: 1% 2%; } }
 
 .reserva:hover {
   color: #005444;
@@ -757,15 +1062,17 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-.espacio-intangible {
-  height: 6vh; }
-
+/*Navegacion de el slider*/
 .nav {
   position: absolute;
   z-index: 2;
   top: 45%;
   width: 8%;
   cursor: pointer; }
+  @media (max-width: 600px) {
+    .nav {
+      width: 15%;
+      top: 55%; } }
 
 .nav img {
   width: 100%; }
@@ -781,17 +1088,26 @@ body {
   -o-transform: rotate(180deg);
   transform: rotate(180deg); }
 
+/*Navegacion de el slider*/
+/*Slider de los hoteles*/
+.espacio-intangible {
+  height: 6vh; }
+
 .puente-separador {
   position: absolute;
   z-index: 2;
   bottom: -5%; }
+
+.puente-separador img {
+  width: 100%; }
 
 .terminos-condiciones {
   width: 100%;
   background-color: #0b1a20;
   background-image: url("../img/terminos/hojas.jpg"), url("../img/terminos/fondo-puente.jpg");
   background-position: top center, bottom center;
-  background-repeat: repeat-x;
+  background-repeat: repeat-x, repeat-x;
+  background-size: contain, contain;
   padding: 2%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -802,13 +1118,33 @@ body {
   font-size: 1.8em;
   text-transform: uppercase;
   text-shadow: 0px 8px 12px #000000; }
+  @media (max-width: 1400px) {
+    .titulo-prin {
+      margin-top: 8%; } }
+  @media (max-width: 600px) {
+    .titulo-prin {
+      font-size: 5em;
+      margin-top: 15%; } }
 
 .contenido-terminos {
   margin-top: 3%;
   color: white;
-  width: 40%;
+  width: 38%;
   font-weight: 400;
   font-size: 0.8em; }
+  @media (max-width: 1100px) {
+    .contenido-terminos {
+      font-size: 1em;
+      width: 45%; } }
+  @media (max-width: 900px) {
+    .contenido-terminos {
+      font-size: 1.3em;
+      width: 70%; } }
+  @media (max-width: 600px) {
+    .contenido-terminos {
+      font-size: 3em;
+      width: 85%;
+      margin-top: 2%; } }
 
 .contenido-terminos h3 {
   text-transform: uppercase;
@@ -817,6 +1153,15 @@ body {
 .redes-sociales {
   margin-top: 0.5%;
   margin-bottom: 5%; }
+  @media (max-width: 1400px) {
+    .redes-sociales {
+      margin-bottom: 8%; } }
+
+.img-redes {
+  width: 100%; }
+  @media (max-width: 1100px) {
+    .img-redes {
+      width: 80%; } }
 
 .icono-redes {
   padding: 2%; }
