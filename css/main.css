@@ -293,6 +293,14 @@ body {
   -ms-transform: rotate(35deg);
   -o-transform: rotate(35deg);
   transform: rotate(35deg); }
+  @media (min-height: 1050px) {
+    .m-naranja {
+      left: 25%;
+      top: 14%; } }
+  @media (max-height: 1000px) {
+    .m-naranja {
+      left: 26%;
+      top: 14%; } }
 
 .m-azul {
   position: absolute;
@@ -305,14 +313,22 @@ body {
   -ms-transform: rotate(-35deg);
   -o-transform: rotate(-35deg);
   transform: rotate(-35deg); }
+  @media (min-height: 1050px) {
+    .m-azul {
+      right: 25%;
+      top: 40%; } }
+  @media (max-height: 1000px) {
+    .m-azul {
+      right: 26%;
+      top: 40%; } }
 
 .ala-derecha {
   -webkit-transform-origin: right;
   -ms-transform-origin: right;
   transform-origin: right;
   position: absolute;
-  -webkit-animation: alader 1s ease-in-out infinite;
-  animation: alader 1s ease-in-out infinite; }
+  -webkit-animation: alader 1.2s ease-in-out infinite;
+  animation: alader 1.2s ease-in-out infinite; }
 
 .ala-izquierda {
   -webkit-transform-origin: left;
@@ -320,8 +336,8 @@ body {
   transform-origin: left;
   position: absolute;
   left: 50%;
-  -webkit-animation: alaizq 1s ease-in-out infinite;
-  animation: alaizq 1s ease-in-out infinite; }
+  -webkit-animation: alaizq 1.2s ease-in-out infinite;
+  animation: alaizq 1.2s ease-in-out infinite; }
 
 .mantaraya {
   width: 20%;
@@ -345,9 +361,12 @@ body {
   position: absolute;
   z-index: 2;
   bottom: -10%; }
-  @media (min-height: 1000px) {
+  @media (min-height: 1050px) {
     .puente {
       bottom: -1%; } }
+  @media (max-height: 1000px) {
+    .puente {
+      bottom: -8%; } }
   @media (max-width: 1600px) {
     .puente {
       width: 120%;
@@ -383,6 +402,12 @@ body {
   margin-top: -8%;
   position: absolute;
   z-index: 4; }
+  @media (min-height: 1050px) {
+    .logo {
+      margin-top: -5%; } }
+  @media (max-height: 1000px) {
+    .logo {
+      margin-top: -8%; } }
   @media (max-width: 1600px) {
     .logo {
       margin-top: -10%; } }
@@ -400,10 +425,13 @@ body {
       margin-top: -6%; } }
 
 .logo-puentes {
-  width: 55%; }
-  @media (min-height: 1000px) {
+  width: 60%; }
+  @media (min-height: 1050px) {
     .logo-puentes {
       width: 60%; } }
+  @media (max-height: 1000px) {
+    .logo-puentes {
+      width: 55%; } }
   @media (max-width: 1600px) {
     .logo-puentes {
       width: 60%; } }
@@ -425,9 +453,12 @@ body {
   position: absolute;
   z-index: 5;
   top: -8%; }
-  @media (min-height: 1000px) {
+  @media (min-height: 1050px) {
     .lianas {
-      top: 0%; } }
+      top: -6%; } }
+  @media (max-height: 1000px) {
+    .lianas {
+      top: -12%; } }
   @media (max-width: 1600px) {
     .lianas {
       width: 130%;
@@ -456,6 +487,9 @@ body {
   text-shadow: 0px 8px 12px #000000;
   text-transform: uppercase;
   margin-top: 4%; }
+  @media (max-height: 1050px) {
+    .fecha {
+      margin-top: 8%; } }
   @media (min-height: 1000px) {
     .fecha {
       margin-top: 8%; } }
@@ -755,6 +789,34 @@ body {
 .terminos-condiciones {
   width: 100%;
   background-color: #0b1a20;
+  background-image: url("../img/terminos/hojas.jpg"), url("../img/terminos/fondo-puente.jpg");
+  background-position: top center, bottom center;
+  background-repeat: repeat-x;
   padding: 2%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+.titulo-prin {
+  margin-top: 7%;
+  color: white;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  text-shadow: 0px 8px 12px #000000; }
+
+.contenido-terminos {
+  margin-top: 3%;
+  color: white;
+  width: 40%;
+  font-weight: 400;
+  font-size: 0.8em; }
+
+.contenido-terminos h3 {
+  text-transform: uppercase;
+  text-shadow: 0px 8px 12px #000000; }
+
+.redes-sociales {
+  margin-top: 0.5%;
+  margin-bottom: 5%; }
+
+.icono-redes {
+  padding: 2%; }
